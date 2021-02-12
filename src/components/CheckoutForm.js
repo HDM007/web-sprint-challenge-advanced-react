@@ -1,7 +1,7 @@
 import React, { useState } from "react"; 
 import useForm from "../hooks/useForm";
 
-const initialValue = {
+const initialValues = {
   firstName: "",
   lastName: "",
   address: "",
@@ -16,7 +16,7 @@ const initialValue = {
 
 const CheckoutForm = (props) => {
   const [values, handleChanges, handleSubmit, showSuccessMessage] = useForm(
-    initialValue
+    initialValues
   );
 
   return (
